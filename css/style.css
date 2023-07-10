@@ -235,6 +235,7 @@ footer
     width: 60%;
     padding: 20px 25px;
     padding-right: 40px;
+    row-gap: 30px;
   }
 
   .illustration {
@@ -242,15 +243,16 @@ footer
   }
 
   .sub-head {
-    font-size: var(--rem3);
+    /* font-size: var(--rem3); */
+    font-size: 2.8rem;
   }
 
   .sub-para {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .sub-list {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .email-txt {
