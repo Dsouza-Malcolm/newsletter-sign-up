@@ -382,7 +382,7 @@ footer
   }
 
   .success-img {
-    width: 80px;
+    width: 70px;
   }
 
   .thanks-card p:nth-child(2) {
@@ -392,6 +392,7 @@ footer
 
   .thanks-card p:nth-child(3) {
     font-size: 16px;
+    margin-top: 10px;
   }
 
   #dismiss-btn {
