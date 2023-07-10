@@ -340,7 +340,7 @@ footer
 
   .sub-block {
     width: 100%;
-    padding: 40px 20px;
+    padding: 50px 20px;
     row-gap: 35px;
   }
 
@@ -349,11 +349,11 @@ footer
   }
 
   .sub-para {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .sub-list {
-    font-size: 16px;
+    font-size: 17px;
     row-gap: 10px;
   }
 
