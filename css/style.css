@@ -62,7 +62,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  row-gap: var(--rem12);
+  row-gap: var(--rem14);
 }
 
 .sub-head {
@@ -242,15 +242,20 @@ footer
   }
 
   .sub-head {
-    font-size: var(--rem25);
+    font-size: var(--rem3);
   }
 
   .sub-para {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .sub-list {
-    font-size: 13px;
+    font-size: 18px;
+  }
+
+  .email-txt {
+    font-size: 16px;
+    margin-bottom: 8px;
   }
 
   /* .thanks-card {
