@@ -1,11 +1,11 @@
 @font-face {
   font-family: regular;
-  src: url(/assets/fonts/Roboto-Regular.ttf);
+  src: url("../assets/fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: boldy;
-  src: url(/assets/fonts/Roboto-Bold.ttf);
+  src: url("../assets/fonts/Roboto-Bold.ttf");
 }
 /* font-family: 'Roboto', sans-serif; */
 /* Weights: 400, 700 */
@@ -84,7 +84,7 @@ body {
 }
 
 li.list {
-  list-style-image: url(/assets/images/icon-list.svg);
+  list-style-image: url("../assets/images/icon-list.svg");
   margin-left: 25px;
   padding-left: 10px;
 }
@@ -334,7 +334,7 @@ footer
   }
 
   img.illustration {
-    content: url(/assets/images/illustration-sign-up-mobile.svg);
+    content: url("../assets/images/illustration-sign-up-mobile.svg");
     width: 100%;
   }
 
