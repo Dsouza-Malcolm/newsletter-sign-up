@@ -341,18 +341,20 @@ footer
   .sub-block {
     width: 100%;
     padding: 40px 20px;
+    row-gap: 35px;
   }
 
   .sub-head {
-    font-size: var(--rem2);
+    font-size: var(--rem25);
   }
 
   .sub-para {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .sub-list {
-    font-size: 13px;
+    font-size: 16px;
+    row-gap: 10px;
   }
 
   #sub-btn {
