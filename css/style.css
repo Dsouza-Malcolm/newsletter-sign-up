@@ -1,19 +1,11 @@
 @font-face {
   font-family: regular;
-<<<<<<< HEAD
   src: url("../assets/fonts/Roboto-Regular.ttf");
-=======
-  src: url(./assets/fonts/Roboto-Regular.ttf);
->>>>>>> b6a0cb5fe466cec6c754bae160e406bc61022027
 }
 
 @font-face {
   font-family: boldy;
-<<<<<<< HEAD
   src: url("../assets/fonts/Roboto-Bold.ttf");
-=======
-  src: url(./assets/fonts/Roboto-Bold.ttf);
->>>>>>> b6a0cb5fe466cec6c754bae160e406bc61022027
 }
 /* font-family: 'Roboto', sans-serif; */
 /* Weights: 400, 700 */
@@ -92,11 +84,7 @@ body {
 }
 
 li.list {
-<<<<<<< HEAD
   list-style-image: url("../assets/images/icon-list.svg");
-=======
-  list-style-image: url(./assets/images/icon-list.svg);
->>>>>>> b6a0cb5fe466cec6c754bae160e406bc61022027
   margin-left: 25px;
   padding-left: 10px;
 }
@@ -346,11 +334,7 @@ footer
   }
 
   img.illustration {
-<<<<<<< HEAD
     content: url("../assets/images/illustration-sign-up-mobile.svg");
-=======
-    content: url(./assets/images/illustration-sign-up-mobile.svg);
->>>>>>> b6a0cb5fe466cec6c754bae160e406bc61022027
     width: 100%;
   }
 
