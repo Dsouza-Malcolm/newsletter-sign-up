@@ -1,0 +1,395 @@
+@font-face {
+  font-family: regular;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: boldy;
+  src: url(/assets/fonts/Roboto-Bold.ttf);
+}
+/* font-family: 'Roboto', sans-serif; */
+/* Weights: 400, 700 */
+:root {
+  /* font variables */
+  --ffr: regular;
+  --ffb: boldy;
+  --f4: 400;
+  --f7: 700;
+
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(231, 7%, 60%);
+  --charcoal: hsl(235, 18%, 26%);
+  --slate: hsl(234, 29%, 20%);
+  --tomato: #ff6257;
+
+  /* rem 0. size varaiables */
+  --rem09: 0.9rem;
+  --rem08: 0.8rem;
+  --rem07: 0.7rem;
+
+  /* rem 1 size varaibles */
+  --rem1: 1rem;
+  --rem15: 1.5rem;
+  --rem14: 1.4rem;
+  --rem13: 1.3rem;
+  --rem12: 1.2rem;
+  --rem11: 1.1rem;
+
+  /* rem 2 size varaibles */
+  --rem2: 2rem;
+  --rem25: 2.5rem;
+  --rem22: 2.2rem;
+
+  /* rem 3 size varaibles */
+  --rem3: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ffr);
+  line-height: 1.4rem;
+  background-color: var(--white);
+}
+
+.sub-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: var(--rem12);
+}
+
+.sub-head {
+  color: var(--slate);
+  font-family: var(--ffb);
+}
+
+.sub-para {
+  color: var(--charcoal);
+}
+
+.sub-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  row-gap: 5px;
+  color: var(--charcoal);
+}
+
+li.list {
+  list-style-image: url(/assets/images/icon-list.svg);
+  margin-left: 25px;
+  padding-left: 10px;
+}
+
+.email-txt {
+  display: block;
+  color: var(--slate);
+  font-family: var(--ffb);
+  font-size: var(--rem08);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus {
+  border: 1px solid var(--charcoal);
+}
+
+input[type="text"]:hover {
+  cursor: pointer;
+}
+
+#sub-btn {
+  background-color: var(--slate);
+  color: var(--white);
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  font-family: var(--ffb);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  /* box-shadow: 0 1px 10px 0px var(--tomato); */
+}
+
+#sub-btn:hover {
+  background-color: var(--tomato);
+  transition: 0.6s;
+  box-shadow: var(--tomato) 0px 1px 1px 0px inset,
+    var(--tomato) 0px 50px 100px -20px, var(--tomato) 0px 30px 60px -30px;
+}
+
+/* email block message */
+.email-msg {
+  display: flex;
+  justify-content: space-between;
+}
+
+#validate-msg {
+  font-size: var(--rem08);
+  color: var(--tomato);
+  font-family: var(--ffb);
+}
+
+/* styling for Success message */
+.thanks-card {
+  background-color: var(--white);
+  border: none;
+  border-radius: 20px;
+  width: 350px;
+  padding: 40px;
+}
+
+.thanks-card p:nth-child(2) {
+  color: var(--slate);
+  font-family: var(--ffb);
+  font-size: var(--rem25);
+  margin-top: 20px;
+  line-height: normal;
+}
+
+.thanks-card p:nth-child(3) {
+  color: var(--charcoal);
+  font-family: var(--ffr);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.success-img {
+  width: 40px;
+}
+
+#success-email {
+  font-family: var(--ffb);
+}
+
+#dismiss-btn {
+  width: 100%;
+  color: var(--white);
+  background-color: var(--slate);
+  padding: 12px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 8px;
+}
+
+#dismiss-btn:hover {
+  background-color: var(--tomato);
+  transition: 0.6s;
+  box-shadow: var(--tomato) 0px 1px 1px 0px inset,
+    var(--tomato) 0px 50px 100px -20px, var(--tomato) 0px 30px 60px -30px;
+  cursor: pointer;
+}
+
+/* 
+footer
+*/
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: yellow;
+}
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: var(--slate);
+  }
+
+  .container {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  .card {
+    display: flex;
+    background-color: var(--white);
+    width: 60%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .sub-block {
+    width: 60%;
+    padding: 20px 25px;
+    padding-right: 40px;
+  }
+
+  .illustration {
+    width: 40%;
+  }
+
+  .sub-head {
+    font-size: var(--rem25);
+  }
+
+  .sub-para {
+    font-size: 13px;
+  }
+
+  .sub-list {
+    font-size: 13px;
+  }
+
+  /* .thanks-card {
+    
+  } */
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    background-color: var(--slate);
+  }
+
+  .container {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  .card {
+    display: flex;
+    background-color: var(--white);
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .sub-block {
+    width: 60%;
+    padding: 20px 25px;
+    padding-right: 40px;
+  }
+
+  .illustration {
+    width: 40%;
+  }
+
+  .sub-head {
+    font-size: var(--rem25);
+  }
+
+  .sub-para {
+    font-size: 13px;
+  }
+
+  .sub-list {
+    font-size: 13px;
+  }
+
+  .sub-block {
+    row-gap: var(--rem15);
+  }
+}
+
+@media screen and (max-device-width: 786px) {
+  .sub-head {
+    font-size: calc(1.5 * var(--rem15));
+  }
+
+  .sub-block {
+    row-gap: var(--rem12);
+    width: 55%;
+  }
+
+  .illustration {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: var(--white);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  img.illustration {
+    content: url(/assets/images/illustration-sign-up-mobile.svg);
+    width: 100%;
+  }
+
+  .sub-block {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .sub-head {
+    font-size: var(--rem2);
+  }
+
+  .sub-para {
+    font-size: 13px;
+  }
+
+  .sub-list {
+    font-size: 13px;
+  }
+
+  #sub-btn {
+    font-size: 13px;
+  }
+
+  input[type="text"] {
+    padding: 12px;
+    margin-top: 4px;
+  }
+
+  .thanks-card {
+    padding: 50px 25px;
+  }
+
+  .thanks-card p:nth-child(2) {
+    font-size: var(--rem2);
+    font-family: var(--ffb);
+  }
+
+  #dismiss-btn {
+    margin-top: 130px;
+  }
+
+  .attribution {
+    color: var(--slate);
+  }
+
+  .attribution a {
+    color: var(--tomato);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.block {
+  display: block;
+}
