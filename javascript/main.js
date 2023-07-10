@@ -1,5 +1,5 @@
-let form = document.querySelector("form");
-form.addEventListener("submit", (e) => {
+let forms = document.querySelector("form");
+forms.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
